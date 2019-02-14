@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="css/bootstrap410.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base64.css">
+    <link rel="stylesheet" href="css/resume4.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/lineTime.css">
+    <script src="js/jquery3.2.1.js"></script>
+    <script src="js/bootstrap410.js"></script>
+</head>
+<body>
+<div id="initAni">
+    <div class="wmx-resume">汪明喜的简历</div>
+</div>
+<div class="delay-load none" id="mainContent">
+<div id="myCarousel" class="carousel slide fix-bg-slide" data-ride="carousel" data-interval="10000">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/bg_1.jpg" class="carousel-img" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="image/bg_2.png" class="carousel-img" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img src="image/bg_3.png" class="carousel-img" alt="Third slide">
+        </div>
+    </div>
+</div>
+
+<canvas id="myCanvas"></canvas>
+
+<div class="card-area fs16 c71">
+    <div class="card-inner bg-bs-cw-7 card-first">
+        <div class="card-head-w">
+            <span class="card-title-all">Personal Information</span>
+        </div>
+        <div class="card-bodyer fs14 fccs">
+            <div class="avatar-wrap">
+                <img src="image/avatar.png" class="avatar-img">
+            </div>
+            <h3 class="h3 c33">Wang MingXi</h3>
+            <div>182-5600-6539</div>
+            <div>1056935467@qq.com</div>
+            <div class="c75">Full Stack | Big Data</div>
+            <div class="card-social frcs">
+                <div><a><img src="image/csdn.svg" width="20"></a></div>
+                <div><a><img src="image/github.svg" width="20"></a></div>
+                <div><a><img src="image/android.svg" width="20"></a></div>
+                <div><a><img src="image/weixin.svg" width="20"></a></div>
+            </div>
+        </div>
+        <div class="card-foot">
+            <div class="btn-download bg-cb-7 view-detail-btn" data-item="person">View Detail</div>
+        </div>
+    </div>
+    <div class="card-inner bg-bs-cb-3 card-second">
+        <div class="card-head-b">
+            <span class="card-title-all">Project Experience</span>
+        </div>
+        <div class="card-bodyer-b fs12">
+            <div class="events-list-wrap">
+                <div class="ic-time"></div>
+                <div class="events-list">
+                    <div class="right-item events-item events-item1">
+                        <div class="ic-events"></div>
+                        <div class="event-time">2017年5月-2018年5月</div>
+                        <div class="txt-events">完成本科毕设基于Spark Streaming的实时轨迹压缩存储项目</div>
+                    </div>
+                    <div class="left-item events-item events-item2">
+                        <div class="ic-events"></div>
+                        <div class="event-time">2018年7月-2018年9月</div>
+                        <div class="txt-events">天源迪科</div>
+                        <div class="txt-events-2">重构大数据基础平台核心功能</div>
+                    </div>
+                    <div class="right-item events-item events-item3">
+                        <div class="ic-events"></div>
+                        <div class="event-time event-time-2">2018年9月12日<br>-2018年9月20日</div>
+                        <div class="txt-events">开发中秋贺卡分享微信小程序，并成功上线，累计用户5300人，打开次数3万+</div>
+                    </div>
+                </div>
+                <!--<div class="ic-arr"></div>-->
+            </div>
+        </div>
+        <div class="card-foot">
+            <div class="btn-download bg-cw-7 view-detail-btn c33" data-item="experience">View Detail</div>
+        </div>
+    </div>
+    <div class="card-inner bg-bs-cw-7 card-third">
+        <div class="card-head-w">
+            <span class="card-title-all">Technical Introduction</span>
+        </div>
+        <div class="card-bodyer fs14">
+            <div class="tech-list">
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 0s;" >Java</div>
+                    <div class="tech-progress" style="animation-delay: 0.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 1s;">JavaScript</div>
+                    <div class="tech-progress" style="animation-delay: 1.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 2s;">HTML5+CSS3</div>
+                    <div class="tech-progress" style="animation-delay: 2.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:60%">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 3s;">WX App</div>
+                    <div class="tech-progress" style="animation-delay: 3.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:50%">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 4s;">Node</div>
+                    <div class="tech-progress" style="animation-delay: 4.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:40%">40%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 5s;">Scala</div>
+                    <div class="tech-progress" style="animation-delay: 5.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:30%">30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name" style="animation-delay: 6s;">Python</div>
+                    <div class="tech-progress" style="animation-delay: 6.5s;">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:20%">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-foot">
+            <div class="btn-download bg-cb-7 view-detail-btn" data-item="tech">View Detail</div>
+        </div>
+    </div>
+    <div class="card-inner bg-bs-cb-3 card-fourth">
+        <div class="card-head-b">
+            <span class="card-title-all">Why it's me?</span>
+        </div>
+        <div class="card-bodyer">
+            <div class="">我从未让给我机会的人失望过！我就是来改变世界的！</div>
+        </div>
+        <div class="card-foot">
+            <div class="btn-download bg-cw-7 view-detail-btn c33" data-item="experience">View Detail</div>
+        </div>
+    </div>
+</div>
+
+<div class="none ptlwh z99 view-detail-div" id="person-detail">
+    <div class="my-info">
+        <div class="user-avatar"></div>
+        <div class="user-avatar"></div>
+        <div class="user-avatar"></div>
+    </div>
+</div>
+
+<div class="none ptlwh z99 view-detail-div" id="tech-detail">
+    <!--<div class="bg-image-base64 ftlwh"></div>-->
+</div>
+
+<div class="none ptlwh z99 view-detail-div" id="experience-detail">
+    <!--<div class="bg-image-base64 ftlwh"></div>-->
+</div>
+</div>
+</body>
+<script src="js/mo.min.js"></script>
+<script src="js/initAni.js"></script>
+<script src="js/bubble.js"></script>
+<script src="js/resume.js"></script>
+</html>

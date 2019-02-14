@@ -1,0 +1,257 @@
+
+.events-item-wrap {
+    padding-top: 15px;
+    /*width: 100px;*/
+}
+
+.ic-time {
+    background: url("../image/events_bg.png") no-repeat -36px 0;
+    width: 38px;
+    height: 68px;
+    margin: 0 auto;
+    animation: cloudAni 1s ease both;
+}
+
+@keyframes cloudAni {
+    0%, 18%, 45%, 72% {
+        transform: translateY(0);
+        height: 32px;
+    }
+    36% {
+        transform: translateY(-15px);
+        height: 32px;
+    }
+    54% {
+        transform: translateY(-5px);
+        height: 32px;
+    }
+    100% {
+        height: 68px;
+    }
+}
+
+.ic-arr {
+    background: url("../image/events_bg.png") no-repeat -84px -8px;
+    width: 38px;
+    height: 59px;
+    margin: 0 auto;
+    top: -14px;
+    opacity: 0;
+    animation: arrAni 2s 3s linear infinite;
+}
+
+@keyframes arrAni {
+    0%, 50%, 100% {
+        opacity: .5;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: .8;
+        transform: translateY(6px);
+    }
+    75% {
+        opacity: .8;
+        transform: translateY(-6px);
+    }
+    /*0%,  50%, 100% {
+        opacity: .5;
+        height: 59px;
+    }
+    25% {
+        opacity: .8;
+        height: 30px;
+    }
+    75% {
+        opacity: .8;
+        height: 30px;
+    }*/
+
+}
+
+.events-item {
+    position: relative;
+    height: 98px;
+    text-align: left;
+}
+
+.ic-events {
+    position: absolute;
+    width: 45px;
+    height: 98px;
+    top: 0;
+    overflow: hidden;
+}
+
+.txt-events {
+    position: absolute;
+    text-indent: 24px;
+    top: 0;
+}
+
+.right-item {
+    margin-left: 50%;
+}
+
+.right-item .ic-events {
+    left: -7px;
+    background: url("../image/events_bg.png") no-repeat -4px -86px;
+}
+
+.right-item .txt-events {
+    left: 20px;
+    top: 4px;
+}
+
+.left-item {
+
+    width: 50%;
+}
+
+.left-item .ic-events {
+    right: -7px;
+    background: url("../image/events_bg.png") no-repeat -74px -86px;
+}
+
+.left-item .txt-events {
+    top: 6px;
+    right: 44px;
+}
+
+.txt-events-2{
+    position: absolute;
+    top: 24px;
+    text-indent: 24px;
+    animation: enttxt-effect .8s 2s linear both;
+}
+
+.events-item1 .ic-events {
+    animation: entic-effect .8s 1s linear both;
+}
+
+.events-item2 .ic-events {
+    animation: entic-effect .8s 1.8s linear both;
+}
+
+.events-item3 .ic-events {
+    animation: entic-effect .8s 2.6s linear both;
+}
+/*
+
+.events-item4 .ic-events {
+    animation: entic-effect .8s 3.4s linear both;
+}
+
+.events-item5 .ic-events {
+    animation: entic-effect .8s 4.2s linear both;
+}
+
+.events-item6 .ic-events {
+    animation: entic-effect .8s 5s linear both;
+}
+*/
+
+@keyframes entic-effect {
+    0% {
+        width: 15px;
+        height: 24px;
+        opacity: 0;
+    }
+    30% {
+        width: 15px;
+        height: 24px;
+        opacity: 1;
+    }
+    100% {
+        width: 45px;
+        height: 98px;
+    }
+}
+
+.events-item1 .txt-events {
+    animation: enttxt-effect .8s 1s linear both;
+}
+
+.events-item2 .txt-events {
+    animation: enttxt-effect .8s 1.8s linear both;
+}
+
+.events-item3 .txt-events {
+    animation: enttxt-effect .8s 2.6s linear both;
+}
+/*
+.events-item4 .txt-events {
+    animation: enttxt-effect .8s 3.4s linear both;
+}
+
+.events-item5 .txt-events {
+    animation: enttxt-effect .8s 4.2s linear both;
+}
+
+.events-item6 .txt-events {
+    animation: enttxt-effect .8s 5s linear both;
+}*/
+
+@keyframes enttxt-effect {
+    0% {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.event-time{
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 140px;
+}
+.event-time-2{
+    top: -5px;
+}
+
+.right-item .event-time{
+    left: -140px;
+}
+
+
+.left-item .event-time{
+    right: -140px;
+}
+
+.events-item1 .event-time {
+    animation: eventTime .8s 1s linear both;
+}
+
+.events-item2 .event-time {
+    animation: eventTime .8s 1.8s linear both;
+}
+
+.events-item3 .event-time {
+    animation: eventTime .8s 2.6s linear both;
+}
+/*
+.events-item4 .event-time {
+    animation: eventTime .8s 3.4s linear both;
+}
+
+.events-item5 .event-time {
+    animation: eventTime .8s 4.2s linear both;
+}
+
+.events-item6 .event-time {
+    animation: eventTime .8s 5s linear both;
+}*/
+
+@keyframes eventTime {
+    0% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

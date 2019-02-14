@@ -1,0 +1,146 @@
+/*字体文件*/
+@font-face {
+    font-family: Quicksand;
+    src: url("../font/Quicksand.otf");
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url("../font/pacifico.ttf");
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/*字体大小常用*/
+.fs12 {
+    font-size: 12px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+/*颜色&背景色*/
+.bg-cw-7 {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.bg-cb-7 {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.c71 {
+    color: rgb(7, 156, 250);
+}
+
+.c33 {
+    color: #333 !important;
+}
+
+.c75 {
+    color: #757575;
+}
+
+.bg-bs-cw-7 {
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+}
+
+.bg-bs-cb-3 {
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+}
+.bs-34 {
+    box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+}
+
+/*固定布局常用*/
+
+.w, .wh {
+    width: 100%;
+}
+
+.h, .wh {
+    height: 100%;
+}
+
+.ptlwh, .ftlwh {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ptlwh {
+    position: absolute;
+}
+
+.ftlwh {
+    position: fixed;
+}
+
+.z99 {
+    z-index: 99;
+}
+
+.z100 {
+    z-index: 100;
+}
+.z-99 {
+    z-index: -99;
+}
+.z-100 {
+    z-index: -100;
+}
+/*弹性布局*/
+.fcc, .fccs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fccs {
+    justify-content: space-around;
+}
+
+.frc, .frcs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.frcs {
+    justify-content: space-around;
+}
+
+.none{
+    display: none;
+}
+/*margin*/
+.mr10 {
+    margin-right: 10px;
+}
+
+.pd15 {
+    padding: 15px;
+}
+
+.tc{
+    text-align: center;
+}
